@@ -2,7 +2,7 @@ Curs d'Administració Linux en RST per ReadTheDocs i Sphinx.
 
 Autor: Joan Francesc Arbona
 
-Llicència del curs: Creative Commons
+Llicència GNU General Public License v3.0
 
 ## Generar documentació
 
