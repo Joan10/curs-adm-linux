@@ -8,85 +8,85 @@ Welcome to Curs Administració Linux's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Filosofia i ecosistema Linux:
+   :caption: 1. Filosofia i ecosistema Linux:
 
    Tema1/Tema1
 
 .. toctree::
    :maxdepth: 2
-   :caption: Interfícies:
+   :caption: 2. Interfícies:
 
    Tema2/Tema2
 
 .. toctree::
    :maxdepth: 2
-   :caption: Processos:
+   :caption: 3. Processos:
 
    Tema3/Tema3
 
 .. toctree::
    :maxdepth: 2
-   :caption: Fitxers:
+   :caption: 4. Fitxers:
 
    Tema4/Tema4
 
 .. toctree::
    :maxdepth: 2
-   :caption: Entorn d'usuari:
+   :caption: 5. Entorn d'usuari:
 
    Tema5/Tema5
 
 .. toctree::
    :maxdepth: 2
-   :caption: Scripting bàsic:
+   :caption: 6. Scripting bàsic:
 
    Tema6/Tema6
 
 .. toctree::
    :maxdepth: 2
-   :caption: Operacions bàsiques de xarxa:
+   :caption: 7. Operacions bàsiques de xarxa:
 
    Tema7/Tema7
 
 .. toctree::
    :maxdepth: 2
-   :caption: Principis de seguretat local:
+   :caption: 8. Principis de seguretat local:
 
    Tema8/Tema8
 
 .. toctree::
    :maxdepth: 2
-   :caption: Arrancada del sistema:
+   :caption: 9. Arrancada del sistema:
 
    Tema9/Tema9
 
 .. toctree::
    :maxdepth: 2
-   :caption: Gestió de paquets:
+   :caption: 10. Gestió de paquets:
 
    Tema10/Tema10
 
 .. toctree::
    :maxdepth: 2
-   :caption: Sistemes de fitxers:
+   :caption: 11. Sistemes de fitxers:
 
    Tema11/Tema11
 
 .. toctree::
    :maxdepth: 2
-   :caption: Gestió d_usuaris i seguretat:
+   :caption: 12. Gestió d_usuaris i seguretat:
 
    Tema12/Tema12
 
 .. toctree::
    :maxdepth: 2
-   :caption: Monitorització de sistemes i processos:
+   :caption: 13. Monitorització de sistemes i processos:
 
    Tema13/Tema13
 
 .. toctree::
    :maxdepth: 2
-   :caption: Backups i sistemes de recuperació:
+   :caption: 14. Backups i sistemes de recuperació:
 
    Tema14/Tema14
 
