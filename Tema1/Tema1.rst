@@ -7,23 +7,23 @@ La missió de The Linux Foundation és **proporcionar experiència a qualsevol i
 
 Linux és el projecte de programari de codi obert més gran i més extens del món de la història. The Linux Foundation, de la mà de Linus Torvalds (el creador) i de Greg Kroah-Hartman (principal mantenidor del codi) **proporciona un espai neutre** on protegir i accelerar el desenvolupament del nucli Linux en els propers anys. L’èxit de Linux ha catalitzat el creixement a la comunitat de codi obert, demostrant que aquest tipus de desenvolupament és del tot rendible i, fins i tot, és més eficient que el desenvolupament de codi tancat. La fundació Linux és l’organització paraigua de molts projectes de codi obert que impulsen les empreses actuals, abastant tots els sectors de la indústria:
 
--  Big data i analítica: ODPi, R Consortium
+* Big data i analítica: ODPi, R Consortium
 
--  Xarxa en xarxa: OpenDaylight, ONAP, OPNFV
+* Xarxa en xarxa: OpenDaylight, ONAP, OPNFV
 
--  Incrustat: Dronecode, Zephyr
+* Incrustat: Dronecode, Zephyr
 
--  Eines web: JS Foundation, Node.js
+* Eines web: JS Foundation, Node.js
 
--  Cloud computing: Cloud Foundry, Cloud Native Computing Foundation, Open Container Initiative
+* Cloud computing: Cloud Foundry, Cloud Native Computing Foundation, Open Container Initiative
 
--  Automoció: Linux Automotive Grade
+* Automoció: Linux Automotive Grade
 
--  Seguretat: la iniciativa d’infraestructura bàsica
+* Seguretat: la iniciativa d’infraestructura bàsica
 
--  Blockchain: Hyperledger
+* Blockchain: Hyperledger
 
--  I molts més.
+* I molts més.
 
 The Linux Foundation organitza a més múltiples esdeveniments i conferències arreu del món.
 
@@ -67,23 +67,23 @@ Comunitat Linux
 
 Un dels principals avantatges dels projectes de codi obert és l’existència d’una comunitat d’usuaris entorn d’ells. Aquestes comunitats d’usuaris permeten:
 
--  Fer preguntes a fòrums de discussió
+* Fer preguntes a fòrums de discussió
 
--  Subscriure’s a fils de correu
+* Subscriure’s a fils de correu
 
--  Apuntar-te a grups locals de la zona
+* Apuntar-te a grups locals de la zona
 
 La comunitat Linux és un ecosistema que consta de desenvolupadors, programadors, usuaris i venedors. Les formes més populars de contactar són:
 
--  Xats IRC
+* Xats IRC
 
--  Plataformes i fòrums de discussió (Stackoverflow, Reddit etc)
+* Plataformes i fòrums de discussió (Stackoverflow, Reddit etc)
 
--  Projectes col·laboratius allotjats a plataformes com GitHub
+* Projectes col·laboratius allotjats a plataformes com GitHub
 
--  Llistes de correus com la Kernel Mailing List.
+* Llistes de correus com la Kernel Mailing List.
 
--  Events comunitaris (Hackatons, Install Fests, Open Source Summits etc.)
+* Events comunitaris (Hackatons, Install Fests, Open Source Summits etc.)
 
 Terminologia bàsica
 ===================
@@ -131,13 +131,13 @@ Estructura del sistema de fitxers
 
 Pensa en una nevera que disposa de múltiples prestatges que es poden utilitzar per guardar diversos articles. Aquests prestatges ajuden a organitzar els articles de queviures per forma, mida, tipus, etc. El mateix concepte s’aplica a un sistema de fitxers, que és la realització d’un mètode per emmagatzemar i organitzar col·leccions arbitràries de dades de forma usable per als humans. Els diferents tipus de sistemes de fitxers compatibles amb Linux:
 
--  Sistemes de fitxers de disc convencionals: ext2, ext3, ext4, XFS, Btrfs, JFS, NTFS, etc.
+* Sistemes de fitxers de disc convencionals: ext2, ext3, ext4, XFS, Btrfs, JFS, NTFS, etc.
 
--  Sistemes de fitxers d’emmagatzematge flash: ubifs, JFFS2, YAFFS, etc.
+* Sistemes de fitxers d’emmagatzematge flash: ubifs, JFFS2, YAFFS, etc.
 
--  Sistemes de fitxers de bases de dades
+* Sistemes de fitxers de bases de dades
 
--  Sistemes de fitxers amb finalitat especial: procfs, sysfs, tmpfs, squashfs, debugfs, etc.
+* Sistemes de fitxers amb finalitat especial: procfs, sysfs, tmpfs, squashfs, debugfs, etc.
 
 Aquesta secció descriurà el disseny del sistema de fitxers estàndard compartit per la majoria de les distribucions de Linux.
 
@@ -157,39 +157,39 @@ Estàndard de la jerarquia
 
 Els sistemes de fitxers en Linux segueixen una plantilla predefinida anomenada Filesystem Hierarchy Standard (FHS) . Linux empra el caràcter ``/`` per separar el camí o path a diferència de Windows que empra ``\``. Els principals directoris que inclou Linux són:
 
--  ``/`` Arrel del sistema de fitxers.
+* ``/`` Arrel del sistema de fitxers.
 
--  ``/bin`` Binaris essencials
+* ``/bin`` Binaris essencials
 
--  ``/boot`` Fitxers estàtics del bootloader
+* ``/boot`` Fitxers estàtics del bootloader
 
--  ``/dev`` Abstracció al sistema de fitxers dels dispositius connectats
+* ``/dev`` Abstracció al sistema de fitxers dels dispositius connectats
 
--  ``/etc`` Fitxers de configuració del sistema
+* ``/etc`` Fitxers de configuració del sistema
 
--  ``/home`` Directoris dels usuaris del sistema
+* ``/home`` Directoris dels usuaris del sistema
 
--  ``/lib`` Llibreries compartides essencials i mòduls del kernel
+* ``/lib`` Llibreries compartides essencials i mòduls del kernel
 
--  ``/media`` Punt de muntatge per dispositius extraíbles (USBs, targetes etc.)
+* ``/media`` Punt de muntatge per dispositius extraíbles (USBs, targetes etc.)
 
--  ``/mnt`` Punt de muntatge temporal per qualsevol sistema de fitxers
+* ``/mnt`` Punt de muntatge temporal per qualsevol sistema de fitxers
 
--  ``/opt`` Directori per aplicacions opcionals
+* ``/opt`` Directori per aplicacions opcionals
 
--  ``/sbin`` Binaris de sistema
+* ``/sbin`` Binaris de sistema
 
--  ``/srv`` Dades dels serveis oferits pel sistema
+* ``/srv`` Dades dels serveis oferits pel sistema
 
--  ``/tmp`` Fitxers temporals (s’esborren en reiniciar la màquina)
+* ``/tmp`` Fitxers temporals (s’esborren en reiniciar la màquina)
 
--  ``/usr`` Utilitats i aplicacions d’usuaris del sistema.
+* ``/usr`` Utilitats i aplicacions d’usuaris del sistema.
 
--  ``/var`` Fitxers variables
+* ``/var`` Fitxers variables
 
--  ``/root`` Directori home per l’usuari root
+* ``/root`` Directori home per l’usuari root
 
--  ``/proc`` Abstracció que fa el kernel en forma de fitxers de l’estat dels processos.
+* ``/proc`` Abstracció que fa el kernel en forma de fitxers de l’estat dels processos.
 
 Distribucions Linux
 ===================
@@ -216,21 +216,21 @@ Instal·lació d’una distribució Linux
 
 A l’hora de triar quina distribució volem instal·lar pel projecte que volem desenvolupar, és important fer-nos unes quantes preguntes:
 
--  Quina és la principal funció del sistema? Servidor o escriptori?
+* Quina és la principal funció del sistema? Servidor o escriptori?
 
--  Quins tipus de paquets són importants?
+* Quins tipus de paquets són importants?
 
--  Quant d’espai necessitam?
+* Quant d’espai necessitam?
 
--  Amb quina freqüència actualitzarem els paquets?
+* Amb quina freqüència actualitzarem els paquets?
 
--  Quin és el cicle de suport?
+* Quin és el cicle de suport?
 
--  Necessitam personalització del kernel?
+* Necessitam personalització del kernel?
 
--  Quin hardware empram?
+* Quin hardware empram?
 
--  Necessitam estabilitat a llarg termini? O preferim un sistema amb el darrer software?
+* Necessitam estabilitat a llarg termini? O preferim un sistema amb el darrer software?
 
 .. figure:: figura6.png
    :alt: Objecte de cada distribució Linux [fig_6]
@@ -272,17 +272,17 @@ El procés d’instal·lació és molt semblant amb qualsevol distribució.
 
 Els següents vídeos mostren el procés:
 
--  `Ubuntu 18.04 <https://www.youtube.com/watch?v=DEySFBANzbw>`__
+* `Ubuntu 18.04 <https://www.youtube.com/watch?v=DEySFBANzbw>`__
 
--  `Centos 7 <https://www.youtube.com/watch?v=_D7M-cCslB8>`__
+* `Centos 7 <https://www.youtube.com/watch?v=_D7M-cCslB8>`__
 
--  `OpenSUSE <https://www.youtube.com/watch?v=iPGbtCj5pss>`__
+* `OpenSUSE <https://www.youtube.com/watch?v=iPGbtCj5pss>`__
 
 L’exercici que es proposa es composa en dos:
 
--  Arrancar un sistema operatiu Live des d’un dispositiu USB
+* Arrancar un sistema operatiu Live des d’un dispositiu USB
 
--  Instal·lar una distribució Linux a un entorn VirtualBox
+* Instal·lar una distribució Linux a un entorn VirtualBox
 
 ::
 
