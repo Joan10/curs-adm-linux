@@ -16,7 +16,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import sphinx_pdj_theme
+import sphinx_rtd_theme
+
 
 # -- Project information -----------------------------------------------------
 
@@ -40,7 +41,9 @@ release = '1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+        "sphinx_rtd_theme"
 ]
+html_experimental_html5_writer = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -75,8 +78,8 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_pdj_theme'
-html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

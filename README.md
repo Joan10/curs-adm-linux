@@ -16,3 +16,6 @@ Generar html:
 make clean
 make html
 ```
+
+sudo rsync -avz _build/html/ /srv/docker/webapp/html/curslinux/
+
