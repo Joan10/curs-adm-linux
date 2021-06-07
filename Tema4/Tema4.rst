@@ -566,15 +566,16 @@ La taula `[vim_basic_com] <#vim_basic_com>`__ mostra les comandes més bàsiques
    ================== ====================================
    **Comanda**        **Descripció**
    Fletxes del teclat Moure amunt, avall, dreta i esquerra
-   \                  Mou línia abaix
-   \                  Mou línia amunt
-   \                  Mou un caràcter a l’esquerra
-   \                  Mou un caràcter a la dreta
-   \                  Mou a l’inici de la línia
-   \                  Mou al final de la línia
-   \                  Mou a l’inici de la paraula
-   \                  Mou a l’inici del fitxer
-   \                  Mou al final del fitxer
+   j                  Mou línia abaix
+   k                  Mou línia amunt
+   h                  Mou un caràcter a l’esquerra
+   l                  Mou un caràcter a la dreta
+   0                  Mou a l’inici de la línia
+   $                  Mou al final de la línia
+   w                  Mou a l’inici de la paraula
+   :0 o gg            Mou a l’inici del fitxer
+   G                  Mou al final del fitxer
+   <N>G               Mou a la línia N
    ================== ====================================
 
 [vim_basic_curs]
